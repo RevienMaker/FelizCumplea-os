@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1{
+     font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.corto{
+    font-size: 27px;
+}
+.contraste{
+    color: #000000;
+}
+
+.contenedor{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.intro{
+    background-color: #ffdba6;
+}
+.cosas{
+    z-index: 50;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 80%;
+}
+
+/* .cupon{
+    z-index: 50;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 150px;
+    border-radius: 60px 0 60px 0;
+    border-color: #f79dc0;
+    margin: 0;
+}
+.izquierda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 40%;
+    border-right-style: dashed;
+    border-color: #f79dc0;
+    border-radius: 60px 0 0px 0;
+    background-color: #ffffff;
+}
+
+.derecha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: #ffffff;
+    width: 100%;border-radius: 0px 0 60px 0;
+}
+.canjear{
+    width: 100%;
+} */
+
+img{
+    position: static;
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.dos{
+    background-color: #9cbac2;
+}
+.tres{
+    background-color: #fcebbd;
+}
+.cuatro{
+    background-color: #c7d4c2;
+}
+.cinco{
+    background-color: #f6aa90;
+}
+.seis{
+    background-color: #f79dc0;
+}
+.siete{
+    background-color: #a6c1ec;
+}
+
+
+
+
+.cupon {
+    width: 100%;
+    height: 200px;
+    background: #4fa1ff;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.cupon-contenido {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+/* Muescas del cupón */
+.cupon-contenido::before,
+.cupon-contenido::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: #4fa1ff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.cupon-contenido::before {
+    left: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cupon-contenido::after {
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Texto central */
+.cupon-texto {
+    width: 50%;
+    text-align: center;
+    padding: 0 5px 0 30px;
+}
+
+.cupon-subtitulo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cupon-texto h2 {
+    font-size: 27px;
+    margin: 0;
+    margin-top: 10px;
+    color: #4fa1ff;
+    padding-bottom: 5px;
+}
+
+.cupon-texto p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0 10px 0;
+    padding-bottom: 5px;
+}
+
+/* Detalles laterales */
+.cupon-detalles {
+    width: 100px;
+    height: 100%;
+    border-left: 4px dashed #4fa1ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cupon-detalles span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: bold;
+}
+
+.cupon-fecha {
+    background: #4fa1ff;
+    color: white;
+    padding: 7px 4px;
+}
